@@ -138,9 +138,10 @@ public class BaiduLocation extends CordovaPlugin {
                 PluginResult pluginResult = new PluginResult(PluginResult.Status.ERROR, errMsg);
                 pluginResult.setKeepCallback(true);
                 cbCtx.sendPluginResult(pluginResult);
-            } finally {
-                mLocationClient.stop();
             }
+//            finally {
+//                mLocationClient.stop();
+//            }
         }
     };
 
